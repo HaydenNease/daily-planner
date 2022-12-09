@@ -2,10 +2,10 @@ $(document).ready(function () {
   
   $('#currentDay').text(dayjs().format('dddd, MMMM D, YYYY'));
 
-  var saveBtn = $('.saveBtn');
-
   currHour = dayjs().hour();
-          
+  
+  var saveBtn = $('.saveBtn');
+  
   $(saveBtn).click(function() {
     var text = $(this).siblings('.description').val();
     console.log (text);
