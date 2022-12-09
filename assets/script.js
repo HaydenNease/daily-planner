@@ -1,5 +1,4 @@
-var currDay = $('#currentDay');
-currDay.text(new Date());
+
 
 var saveBtn = $('.saveBtn');
 currHour = dayjs().hour();
@@ -13,7 +12,7 @@ $(document).ready(function () {
   // local storage. HINT: What does `this` reference in the click listener
   // function? How can DOM traversal be used to get the "hour-x" id of the
   // time-block containing the button that was clicked? How might the id be
-  // useful when saving the description in local storage?
+  // useful when saving the description in local storage?             
   $(saveBtn).click(function() {
     var text = $(this).siblings('.description').val();
     console.log (text);
@@ -44,4 +43,5 @@ $(document).ready(function () {
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
+  $('#currentDay').text(dayjs().format('ddd, MMMM D YYYY'))
 });
