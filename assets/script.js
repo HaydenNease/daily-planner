@@ -3,7 +3,7 @@ $(document).ready(function () {
   $('#currentDay').text(dayjs().format('dddd, MMMM D, YYYY'));
 
   var saveBtn = $('.saveBtn');
-  
+
   currHour = dayjs().hour();
           
   $(saveBtn).click(function() {
@@ -27,5 +27,4 @@ $(document).ready(function () {
     
     $(this).find('.description').val(text);
   });
-
 });
